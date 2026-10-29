@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harthika V — Portfolio. MCA Student & Aspiring Full-Stack Developer specializing in web development, Android engineering, and practical software applications.">
+  <meta name="author" content="Harthika V">
+  <meta name="theme-color" content="#0A0A0C">
+  <title>Harthika V — MCA Student | Aspiring Full-Stack Developer</title>
+
+  <!-- Google Fonts: Playfair Display (Serif Headings), Plus Jakarta Sans (Clean Modern Sans), JetBrains Mono (Tech Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- FIXED GLASSMORPHISM HEADER -->
+  <header id="navbar" class="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Harthika V Homepage">
+        <span class="brand-monogram">H</span>
+        <span class="brand-text">Harthika<span class="brand-period">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Selected Work</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions: Theme Toggle, Resume & Mobile Hamburger -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Nav Resume Button -->
+        <button id="nav-resume-btn" class="btn btn-editorial-outline btn-sm" aria-label="Download Resume">
+          <span>Resume</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION — CLEAN TWO-COLUMN CRIMSON & OBSIDIAN -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-subtle" aria-hidden="true">
+        <div class="crimson-ambient-glow"></div>
+        <div class="hero-grid-pattern"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Left Hero Column: Typography & Content -->
+        <div class="hero-content">
+          <div class="hero-eyebrow-tag reveal-fade">
+            <span class="eyebrow-accent-dot"></span>
+            <span>MCA STUDENT &bull; ASPIRING FULL-STACK DEVELOPER</span>
+          </div>
+
+          <div class="hero-greeting reveal-fade delay-1">Hello, I'm</div>
+
+          <h1 class="hero-name-heading reveal-fade delay-1" id="hero-name-heading" aria-label="Harthika V">
+            <span id="hero-name-text" class="hero-name-text"></span><span id="hero-name-cursor" class="hero-name-cursor" aria-hidden="true"></span>
+          </h1>
+
+          <div class="hero-role-wrapper reveal-fade delay-2">
+            <span class="hero-role-prefix">MCA Student &mdash; </span>
+            <span id="typing-text" class="hero-typing-role">Aspiring Full-Stack Developer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description reveal-fade delay-3">
+            “I am an MCA student who enjoys building responsive websites and practical applications while learning frontend and backend technologies.”
+          </p>
+
+          <!-- Action Buttons: Explore My Work, About Me, Contact Me -->
+          <div class="hero-actions reveal-fade delay-4">
+            <a href="#projects" class="btn btn-crimson-solid">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#about" class="btn btn-outline-white">
+              <span>About Me</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost-white">
+              <span>Contact Me</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Direct Social Links below buttons -->
+          <div class="hero-social-links reveal-fade delay-5">
+            <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" class="hero-social-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <span class="social-divider">&bull;</span>
+            <a href="https://www.linkedin.com/in/harthika-v-a5b758411" target="_blank" rel="noopener noreferrer" class="hero-social-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <span class="social-divider">&bull;</span>
+            <span class="hero-location-text">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Udupi, Karnataka, India
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Hero Column: Real Profile Photo with Refined Frame, Hover Glow & Floating Label -->
+        <div class="hero-portrait-col reveal-fade delay-2">
+          <div class="portrait-presentation-wrapper" id="hero-portrait-container">
+            <!-- Subtle background glow behind the image -->
+            <div class="portrait-ambient-glow" aria-hidden="true"></div>
+
+            <!-- Rounded portrait frame -->
+            <div class="portrait-rounded-frame">
+              <img 
+                src="public/images/MGH_5073.JPG.jpeg" 
+                alt="Profile photo of Harthika V" 
+                class="hero-portrait-img" 
+                id="hero-profile-photo"
+                loading="eager"
+              >
+            </div>
+
+            <!-- Floating information label overlapping bottom edge -->
+            <div class="portrait-floating-label">
+              <span class="floating-label-dot"></span>
+              <span class="floating-label-text">Creating. Learning. Improving.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle transition to content sections -->
+      <div class="hero-bottom-curve" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none">
+          <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="var(--bg-obsidian)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME — PROFESSIONAL DEVELOPER PORTFOLIO -->
+    <section id="about" class="section about-section">
+      <div class="container about-text-container reveal-on-scroll">
+        <span class="about-eyebrow-label">ABOUT ME</span>
+        <h2 class="about-main-heading">
+          Building My Skills. <span class="serif-accent">Creating Real Solutions.</span>
+        </h2>
+        <div class="about-body-content">
+          <p class="about-description-text">
+            I’m Harthika V, an MCA student and aspiring <span class="highlight-crimson">Full-Stack Developer</span> passionate about building responsive web applications and practical software solutions. Through hands-on projects, I’m developing my skills in frontend development, databases, authentication, and application design.
+          </p>
+          <p class="about-focus-text">
+            My goal is to join a reputed IT company, contribute to meaningful software projects, and grow into a skilled <span class="highlight-crimson">Full-Stack Developer</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EDUCATION SECTION — CLEAN VERTICAL TIMELINE -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">ACADEMIC FOUNDATION</span>
+          <h2 class="section-title">
+            Academic <span class="serif-accent">Education</span>
+          </h2>
+          <div class="section-accent-line"></div>
+        </div>
+
+        <div class="education-vertical-timeline">
+          <!-- Thin vertical line on left connecting entries -->
+          <div class="timeline-line-track" aria-hidden="true"></div>
+
+          <!-- Entry 1: MCA -->
+          <div class="timeline-entry-item reveal-on-scroll">
+            <!-- Circular timeline marker on the line -->
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+
+            <!-- Education Card -->
+            <div class="education-card">
+              <div class="edu-card-top">
+                <div class="edu-heading-block">
+                  <h3 class="edu-degree-title">Master of Computer Applications (MCA)</h3>
+                  <h4 class="edu-institution-name">Poornaprajna Institute of Management, Udupi</h4>
+                </div>
+                <div class="edu-status-badge-block">
+                  <span class="edu-year-badge">2025–2027</span>
+                  <span class="edu-status-pill">
+                    <span class="status-live-indicator"></span> Currently Pursuing
+                  </span>
+                </div>
+              </div>
+              <p class="edu-summary-desc">
+                Currently pursuing Master of Computer Applications (MCA), focusing on full-stack software development, distributed database management, object-oriented software engineering, and modern application design.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 2: BCA -->
+          <div class="timeline-entry-item reveal-on-scroll">
+            <!-- Circular timeline marker on the line -->
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+
+            <!-- Education Card -->
+            <div class="education-card">
+              <div class="edu-card-top">
+                <div class="edu-heading-block">
+                  <h3 class="edu-degree-title">Bachelor of Computer Applications (BCA)</h3>
+                  <h4 class="edu-institution-name">Dr. G. Shankar Women's College, Udupi</h4>
+                </div>
+                <div class="edu-status-badge-block">
+                  <span class="edu-score-badge">CGPA: <strong>8.41</strong></span>
+                  <span class="edu-graduated-pill">Completed in 2025</span>
+                </div>
+              </div>
+              <p class="edu-summary-desc">
+                Completed Bachelor of Computer Applications (BCA) with foundational computing, data structures, object-oriented programming (Java), web development scripting, and relational database management systems.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS & INTERESTS — ORGANIZED CATEGORIES -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">EXPERTISE &amp; STACK</span>
+          <h2 class="section-title">
+            Skills &amp; <span class="serif-accent">Interests</span>
+          </h2>
+          <p class="section-subtext">A structured overview of frontend, programming languages, backend &amp; database systems, and development tools.</p>
+          <div class="section-accent-line"></div>
+        </div>
+
+        <!-- Four Clear Skill Categories Grid -->
+        <div class="skills-categories-grid reveal-on-scroll">
+          
+          <!-- Category 1: Frontend -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Frontend</h3>
+            <div class="skills-tags-wrap">
+              <div class="skill-tag-clean"><span class="skill-dot"></span>HTML</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>CSS</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>JavaScript</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>React</div>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming Languages -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Programming Languages</h3>
+            <div class="skills-tags-wrap">
+              <div class="skill-tag-clean"><span class="skill-dot"></span>Java</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>Python</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>PHP</div>
+            </div>
+          </div>
+
+          <!-- Category 3: Database & Backend Tools -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Database &amp; Backend Tools</h3>
+            <div class="skills-tags-wrap">
+              <div class="skill-tag-clean"><span class="skill-dot"></span>Firebase</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>MySQL</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>Supabase</div>
+            </div>
+          </div>
+
+          <!-- Category 4: Development Tools -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Development Tools</h3>
+            <div class="skills-tags-wrap">
+              <div class="skill-tag-clean"><span class="skill-dot"></span>Git</div>
+              <div class="skill-tag-clean"><span class="skill-dot"></span>GitHub</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROJECTS — CLEAN 3-COLUMN GRID ("Selected Work") -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">PORTFOLIO</span>
+          <h2 class="section-title">
+            Selected <span class="serif-accent">Work</span>
+          </h2>
+          <p class="section-subtext">Curated academic and practical applications built across web development, mobile engineering, and machine learning.</p>
+          <div class="section-accent-line"></div>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters-bar reveal-on-scroll" role="tablist" aria-label="Project Category Filters">
+          <button class="filter-tab-btn active" data-filter="all" role="tab" aria-selected="true">
+            <span>All Projects</span>
+            <span class="count-chip">5</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="web" role="tab" aria-selected="false">
+            <span>Web Development</span>
+            <span class="count-chip">2</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="android" role="tab" aria-selected="false">
+            <span>Android</span>
+            <span class="count-chip">2</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="ml" role="tab" aria-selected="false">
+            <span>Machine Learning</span>
+            <span class="count-chip">1</span>
+          </button>
+        </div>
+
+        <!-- Clean 3-Column Projects Grid -->
+        <div class="projects-clean-grid" id="projects-grid">
+
+          <!-- Project 01: PickBite -->
+          <article class="project-clean-card reveal-on-scroll" data-category="web" data-project-id="pickbite">
+            <div class="card-top-meta">
+              <span class="card-number">01</span>
+              <span class="card-cat-badge">Web Development</span>
+            </div>
+            <h3 class="card-project-title">PickBite: Food Decision Wheel</h3>
+            <p class="card-project-desc">
+              A food decision web application with food categories, an interactive spinning wheel, food items, and an admin dashboard.
+            </p>
+            <div class="card-tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Realtime DB</span>
+            </div>
+            <div class="card-action-footer">
+              <button class="btn btn-outline-crimson btn-xs view-details-btn" data-project="pickbite">
+                <span>View Details</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" class="btn btn-outline-github btn-xs github-repo-btn" aria-label="View Harthika V on GitHub">
+                <span>View GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02: Laptop Price Prediction -->
+          <article class="project-clean-card reveal-on-scroll" data-category="ml" data-project-id="laptop-price">
+            <div class="card-top-meta">
+              <span class="card-number">02</span>
+              <span class="card-cat-badge">Machine Learning</span>
+            </div>
+            <h3 class="card-project-title">Laptop Price Prediction</h3>
+            <p class="card-project-desc">
+              A machine-learning project that predicts laptop prices based on specifications such as brand, RAM, processor, storage, and graphics.
+            </p>
+            <div class="card-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Scikit-learn</span>
+            </div>
+            <div class="card-action-footer">
+              <button class="btn btn-outline-crimson btn-xs view-details-btn" data-project="laptop-price">
+                <span>View Details</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" class="btn btn-outline-github btn-xs github-repo-btn" aria-label="View Harthika V on GitHub">
+                <span>View GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03: KARRCHU -->
+          <article class="project-clean-card reveal-on-scroll" data-category="android" data-project-id="karrchu">
+            <div class="card-top-meta">
+              <span class="card-number">03</span>
+              <span class="card-cat-badge">Android / Mobile</span>
+            </div>
+            <h3 class="card-project-title">KARRCHU: Expense Tracker</h3>
+            <p class="card-project-desc">
+              An expense-tracking application for recording expenses and viewing summaries, charts, and group-wise expenses.
+            </p>
+            <div class="card-tech-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="card-action-footer">
+              <button class="btn btn-outline-crimson btn-xs view-details-btn" data-project="karrchu">
+                <span>View Details</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" class="btn btn-outline-github btn-xs github-repo-btn" aria-label="View Harthika V on GitHub">
+                <span>View GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04: Coffee Shop Website -->
+          <article class="project-clean-card reveal-on-scroll" data-category="web" data-project-id="coffee-shop">
+            <div class="card-top-meta">
+              <span class="card-number">04</span>
+              <span class="card-cat-badge">Web Development</span>
+            </div>
+            <h3 class="card-project-title">Coffee Shop Website</h3>
+            <p class="card-project-desc">
+              A coffee shop website with product displays, ordering functionality, and user and admin features.
+            </p>
+            <div class="card-tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="card-action-footer">
+              <button class="btn btn-outline-crimson btn-xs view-details-btn" data-project="coffee-shop">
+                <span>View Details</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" class="btn btn-outline-github btn-xs github-repo-btn" aria-label="View Harthika V on GitHub">
+                <span>View GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 05: QuickDoc -->
+          <article class="project-clean-card reveal-on-scroll" data-category="android" data-project-id="quickdoc">
+            <div class="card-top-meta">
+              <span class="card-number">05</span>
+              <span class="card-cat-badge">Android</span>
+            </div>
+            <h3 class="card-project-title">QuickDoc: Doctor Appointment App</h3>
+            <p class="card-project-desc">
+              An Android application for doctor appointment booking and appointment management, including doctor-management features for administrators.
+            </p>
+            <div class="card-tech-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">XML</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="card-action-footer">
+              <button class="btn btn-outline-crimson btn-xs view-details-btn" data-project="quickdoc">
+                <span>View Details</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" class="btn btn-outline-github btn-xs github-repo-btn" aria-label="View Harthika V on GitHub">
+                <span>View GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty Filter State -->
+        <div id="filter-empty-state" class="filter-empty-state" style="display: none;">
+          <h3>No Projects in this Category</h3>
+          <p>Try switching to another filter or view all projects.</p>
+          <button class="btn btn-outline-white btn-sm" id="reset-filter-btn">Reset to All</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CERTIFICATIONS -->
+    <section id="certifications" class="section cert-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">ACCREDITATIONS</span>
+          <h2 class="section-title">
+            Certifications
+          </h2>
+          <div class="section-accent-line"></div>
+        </div>
+
+        <div class="cert-clean-grid reveal-on-scroll">
+          <!-- Cert 1 -->
+          <div class="cert-clean-card">
+            <div class="cert-card-header">
+              <span class="cert-year">2026</span>
+              <span class="cert-provider">SWAYAM</span>
+            </div>
+            <h3 class="cert-clean-title">Cloud Computing</h3>
+            <p class="cert-clean-org">National Programme by Government of India</p>
+            <p class="cert-clean-desc">
+              Virtualization paradigms, cloud-native storage frameworks, distributed compute scaling, and resource orchestration models.
+            </p>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-clean-card">
+            <div class="cert-card-header">
+              <span class="cert-year">2026</span>
+              <span class="cert-provider">SWAYAM</span>
+            </div>
+            <h3 class="cert-clean-title">Natural Language Processing</h3>
+            <p class="cert-clean-org">National Programme by Government of India</p>
+            <p class="cert-clean-desc">
+              Computational linguistics, tokenization algorithms, syntactic parsing, semantic vectors, and sequence processing architectures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SOFT SKILLS & LANGUAGES -->
+    <section id="attributes" class="section attributes-section">
+      <div class="container">
+        <div class="attributes-grid-clean">
+          <!-- Soft Skills -->
+          <div class="attr-clean-card reveal-on-scroll">
+            <span class="attr-eyebrow">INTERPERSONAL</span>
+            <h3 class="attr-title">Soft Skills</h3>
+            <div class="attr-tags-flow">
+              <span class="attr-tag">Problem-solving</span>
+              <span class="attr-tag">Teamwork</span>
+              <span class="attr-tag">Communication</span>
+              <span class="attr-tag">Adaptability</span>
+              <span class="attr-tag">Willingness to learn</span>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="attr-clean-card reveal-on-scroll">
+            <span class="attr-eyebrow">LINGUISTIC</span>
+            <h3 class="attr-title">Languages</h3>
+            <div class="languages-clean-list">
+              <div class="lang-clean-row">
+                <span class="lang-name">Kannada</span>
+                <span class="lang-level">Native / Fluent</span>
+              </div>
+              <div class="lang-clean-row">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Professional Working</span>
+              </div>
+              <div class="lang-clean-row">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level">Conversational</span>
+              </div>
+              <div class="lang-clean-row">
+                <span class="lang-name">Tulu</span>
+                <span class="lang-level">Native Regional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION — "Let's Connect" -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">COMMUNICATION</span>
+          <h2 class="section-title">
+            Let's <span class="serif-accent">Connect</span>
+          </h2>
+          <p class="section-subtext">Feel free to reach out regarding full-stack developer roles, projects, or professional inquiries.</p>
+          <div class="section-accent-line"></div>
+        </div>
+
+        <div class="contact-clean-grid">
+          <!-- Left: Direct Contact Information -->
+          <div class="contact-info-clean reveal-on-scroll">
+            <h3 class="contact-info-title">Direct Contact Information</h3>
+            <p class="contact-info-desc">
+              I am open to discussions regarding full-stack software development positions, internship pathways, and engineering collaborations.
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Email -->
+              <a href="mailto:harthikaanchananchan@gmail.com" class="contact-info-link">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="link-label">Email</span>
+                  <span class="link-value">harthikaanchananchan@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:9742632605" class="contact-info-link">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="link-label">Phone</span>
+                  <span class="link-value">+91 9742632605</span>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div class="contact-info-link">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="link-label">Location</span>
+                  <span class="link-value">Udupi, Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-social-row">
+              <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/harthika-v-a5b758411" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Clean Minimal Contact Form -->
+          <div class="contact-form-clean reveal-on-scroll">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-subtitle">Fill in the fields below to get in touch directly.</p>
+
+            <form id="contact-form" class="clean-form" novalidate>
+              <div class="form-fields-pair">
+                <div class="field-item">
+                  <label for="contact-name" class="field-label">Name <span class="req">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="clean-input" placeholder="Your Full Name" required autocomplete="name">
+                  <span class="field-error-msg" id="name-error">Please provide your name.</span>
+                </div>
+
+                <div class="field-item">
+                  <label for="contact-email" class="field-label">Email <span class="req">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="clean-input" placeholder="your.email@example.com" required autocomplete="email">
+                  <span class="field-error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="field-item">
+                <label for="contact-subject" class="field-label">Subject <span class="req">*</span></label>
+                <input type="text" id="contact-subject" name="subject" class="clean-input" placeholder="e.g. Full-Stack Developer Opportunity" required>
+                <span class="field-error-msg" id="subject-error">Please provide a subject line.</span>
+              </div>
+
+              <div class="field-item">
+                <label for="contact-message" class="field-label">Message <span class="req">*</span></label>
+                <textarea id="contact-message" name="message" class="clean-input clean-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+                <span class="field-error-msg" id="message-error">Please write your message.</span>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-crimson-solid btn-submit">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-status" class="form-status-msg" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. MINIMAL BLACK FOOTER -->
+  <footer class="footer-minimal">
+    <div class="container footer-clean-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">
+          <span class="brand-monogram">H</span>
+          <span>Harthika<span class="text-crimson">.</span></span>
+        </a>
+        <p class="footer-tagline">MCA Student &mdash; Aspiring Full-Stack Developer</p>
+        <p class="footer-institution">Poornaprajna Institute of Management &bull; Udupi, Karnataka, India</p>
+      </div>
+
+      <div class="footer-nav-clean">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Selected Work</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social-clean">
+        <a href="https://github.com/harthikaanchan19" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/harthika-v-a5b758411" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:harthikaanchananchan@gmail.com" aria-label="Email Harthika V">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom-line">
+      <div class="container footer-subtext-container">
+        <p>&copy; <span id="current-year">2026</span> Harthika V. All rights reserved.</p>
+        <p>Built with clean HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- INTERACTIVE PROJECT DETAILS MODAL -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-category" id="modal-category">Web Development</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-notification" class="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
